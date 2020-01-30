@@ -1,0 +1,22 @@
+.settings{
+	&__block{
+		background: #fff;
+		border-radius: 5px;
+		padding: 20px;
+		box-shadow: 0 1px 8px rgba(0,0,0,0.2);
+	}
+	&__footer{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__total{
+		background: $c_bg_light;
+		padding: 10px;
+		border-radius: 5px;
+		font-size: 14px;
+		span{
+			font-weight: bold;
+		}
+	}
+}

@@ -1,0 +1,114 @@
+.section{
+	padding: 30px 20px 50px;
+	margin: 0 auto;
+	&--sm{
+		max-width: 800px;
+	}
+	&--md{
+		max-width: 1024px;
+	}
+	&__wrap{
+		display: flex;
+	}
+	&__cnt{
+		width: 90%;
+		position: relative;
+		z-index: 1;
+		padding-right: 30px;
+	}
+	&__sub{
+		width: 30%;
+		padding-top: 58px;
+	}
+	&__head{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		padding-bottom: 10px;
+		margin-bottom: 25px;
+		border-bottom: 2px solid $c_main;
+		&.has-navigation{
+			padding-right: 53px;
+		}
+		&--table{
+			margin-bottom: 10px;
+			padding-bottom: 0;
+			border: none;
+		}
+	}
+	&__options{
+		display: flex;
+		align-items: center;
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	&__option{
+		padding: 0 10px;
+	}
+	&__headForm{
+		padding: 0 20px;
+		min-width: 300px;
+	}
+	&__info{
+		position: sticky;
+		top: 20px;
+		z-index: 1;
+	}
+	&__infoWrap{
+		padding: 10px 20px 15px;
+		border-radius: 5px;
+		user-select: none;
+	}
+	&__footer{
+		display: flex;
+		justify-content: center;
+	}
+	&__block{
+		margin-bottom: 20px;
+	}
+	&__title{
+		text-transform: uppercase;
+		font-family: $f_alt;
+		border-bottom: 1px solid $c_main;
+		margin-bottom: 10px;
+		font-weight: bold;
+	}
+	&__item{
+		margin-bottom: 15px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	&__reset{
+		position: fixed;
+		z-index: 2;
+		background: $c_error;
+		bottom: 10px;
+		left: 80px;
+		color: #fff;
+		padding: 2px 7px;
+		text-transform: uppercase;
+		border-radius: 5px;
+		display: flex;
+		align-items: center;
+		font-size: 11px;
+		transition: all 0.3s;
+		cursor: pointer;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+		&:hover{
+			background: $c_error_dark;
+		}
+		&.has-openMenu{
+			left: 240px;
+		}
+		span{
+			padding-right: 5px;
+		}
+		svg{
+			width: 12px;
+			height: 12px;
+		}
+	}
+}

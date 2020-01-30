@@ -1,0 +1,41 @@
+.form{
+	background: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+	&__head{
+		margin-bottom: 20px;
+		display: flex;
+		align-items: center;
+		margin-top: -30px;
+	}
+	&__icon{
+		display: flex;
+		width: 80px;
+		height: 80px;
+		align-items: center;
+		justify-content: center;
+		border-radius: 5px;
+		background: $c_alt;
+		margin-right: 20px;
+		padding: 15px;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+		svg{
+			fill: #fff;
+			width: 25px;
+			height: 25px;
+		}
+	}
+	&__title{
+		font-size: 22px;
+		font-family: $f_alt;
+	}
+	&__item{
+		margin-bottom: 20px;
+	}
+	&__footer{
+		display: flex;
+		justify-content: flex-end;
+		padding-top: 10px;
+	}
+}

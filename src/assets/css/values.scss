@@ -1,0 +1,38 @@
+//colors
+$c_main: #313131;
+$c_main_light_1: #414141;
+$c_main_light_2: #525252;
+$c_main_light_3: #9f9f9f;
+
+//$c_alt: #ca3e47;
+//$c_alt_light: rgba(202, 62, 71, 0.4);
+$c_alt: rgb(76, 175, 80);
+$c_alt_light: rgba(76, 175, 80, 0.4);
+$c_alt_dark: rgb(69, 144, 72);
+
+$c_bg: #eee;
+$c_bg_light: #f9f9f9;
+
+$c_border: #ccc;
+$c_border_light: rgba(220, 220, 220, 0.41);
+
+$c_text: #313131;
+$c_text_light: rgba(0, 0, 0, 0.3);
+$c_text_dark: #000;
+
+$c_error: #ca3e47;
+$c_error_dark: #a2333c;
+
+
+//fonts
+$f_main: 'Roboto', serif;
+$f_alt: 'Roboto Condensed', sans-serif;
+
+
+//breakpoints
+$sm: 480px;
+$md: 768px;
+$def: 1024px;
+$lg: 1280px;
+$mg: 1440px;
+

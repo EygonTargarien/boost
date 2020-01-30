@@ -1,0 +1,9 @@
+.title{
+	font-family: $f_alt;
+	font-size: 18px;
+	text-transform: uppercase;
+	&--section{
+		font-size: 30px;
+		font-weight: bold;
+	}
+}

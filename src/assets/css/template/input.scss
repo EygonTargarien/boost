@@ -1,0 +1,127 @@
+.input{
+	position: relative;
+	padding-top: 10px;
+	margin-bottom: 20px;
+	&._m-0{
+		margin-bottom: 0;
+	}
+	&:before{
+		content: '';
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		width: 100%;
+		transition: all 0.3s;
+		border-color: $c_alt;
+		border-style: solid;
+		border-width: thin 0 thin 0;
+		transform: scaleX(0);
+	}
+	&.has-full{
+		.input__label{
+			top: -2px;
+			font-size: 11px;
+			color: $c_text_light;
+			pointer-events: initial;
+		}
+	}
+	&.has-focus{
+		&:before{
+			transform: scaleX(1);
+		}
+		.input__label{
+			top: -2px;
+			font-size: 11px;
+			color: $c_alt;
+		}
+	}
+	&.has-error{
+		&:before{
+			border-color: $c_error;
+			transform: scaleX(1);
+		}
+	}
+	&.has-disabled{
+		opacity: 1;
+		pointer-events: none;
+
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			left: -6px;
+			right: -6px;
+			bottom: 0;
+			height: 37px;
+			background: $c_bg_light;
+			border-radius: 5px;
+		}
+		.input__placeholder{
+			pointer-events: none;
+		}
+		.input__area{
+			//background: $c_bg_light;
+			//padding: 0 10px;
+		}
+	}
+	&__area{
+		height: 40px;
+		width: 100%;
+		display: block;
+		border: none;
+		font-size: 14px;
+		background: none;
+		position: relative;
+		z-index: 1;
+		border-bottom: 1px solid $c_border;
+	}
+	&__label{
+		position: absolute;
+		z-index: 1;
+		top: 17px;
+		left: 0;
+		font-size: 14px;
+		color: $c_text_light;
+		transition: all 0.3s;
+		pointer-events: none;
+		display: flex;
+	}
+	&__translate{
+		padding-left: 4px;
+	}
+	&__error{
+		font-size: 12px;
+		position: absolute;
+		left: 0;
+		top: 100%;
+		color: $c_error;
+	}
+	&__nav{
+		position: absolute;
+		right: 5px;
+		top: 17px;
+		padding: 5px;
+		pointer-events: none;
+		cursor: pointer;
+		line-height: 0;
+		svg{
+			fill: $c_text_light;
+		}
+		&:hover{
+			svg{
+				fill:$c_alt;
+			}
+		}
+		&.has-active{
+			pointer-events: initial;
+			&:hover{
+				svg{
+					fill: $c_alt;
+				}
+			}
+			svg{
+				fill: $c_text_light;
+			}
+		}
+	}
+}
